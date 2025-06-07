@@ -354,10 +354,10 @@ def delete_users(request: DeleteRequest):
     finally:
         cursor.close()
         conn.close()
-if __name__== "_main_":
+if __name__== "__main__":
     import uvicorn
-
-uvicorn.run("weblogin:app", host="0.0.0.0", port=8000)
+    uvicorn.run("weblogin:app", host="0.0.0.0", port=8000)
+    #done
 
 # Search users by various fields
 # class SearchQuery(BaseModel):

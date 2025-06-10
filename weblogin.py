@@ -10,7 +10,7 @@ app = FastAPI()
 # Configure CORS to allow frontend origin
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://login-app-sandy.vercel.app/"],  # Adjust for your frontend origin
+    allow_origins=["https://login-app-sandy.vercel.app"],  # Adjust for your frontend origin
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
